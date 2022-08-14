@@ -8,6 +8,7 @@ const initialState = {
 export const empReducers = (state = initialState, action) => {
 
     switch (action.type) {
+        
         case GET_EMPLOYEES:
             return {
                 ...state,

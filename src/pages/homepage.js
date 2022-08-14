@@ -9,17 +9,23 @@ import { Cards } from '../components/Cards';
 
 export const HomePage = () => {
     
-    const { employees } = useSelector((state) => state.users)
-
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getEmployee())
     }, [])
 
-   console.log(employees)
+    const { employees } = useSelector((state) => state.users)
     
 
-
+    useEffect(()=> {
+        if(employees) {            
+            
+            
+            const name = employees.filter((item) => item.first_name === "Shishir ")    
+            console.log(name)    
+        }
+    },[employees])
+    
     const navigate = useNavigate();
     const navigateAdd = () => {
         navigate('/add');
@@ -37,7 +43,7 @@ export const HomePage = () => {
                     <Button className='AddButton' onClick={navigateAdd}>Add Employee</Button>
                 </div>
                 <div className="container datas mt-5">
-                {employees.map((item) => <Cards item={item} key={item.email} />)}              
+                {employees.map((item) => <Cards item={item} key={item.id} />)}              
                 </div>
             </div>
         </>

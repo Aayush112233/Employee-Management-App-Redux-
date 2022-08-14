@@ -20,8 +20,7 @@ h1 {
     width: 25%;
 }
 
-.datas {
-    
+.datas {    
     display: grid;
     grid-template-columns: 25rem 25rem 25rem;
     grid-gap: auto;

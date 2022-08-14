@@ -8,7 +8,7 @@ import "./cards.css"
 
 
 export const Cards = (props) => {
-
+    
     const dispatch = useDispatch();
 
     const handleDelete = (id) => {
@@ -38,8 +38,6 @@ export const Cards = (props) => {
                     </Card.Body>
                 </Card>
             </div>
-
-
         </>
     )
 

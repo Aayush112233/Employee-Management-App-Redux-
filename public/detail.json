@@ -1,14 +1,6 @@
 {
   "employees": [
     {
-      "id": 1,
-      "first_name": "Shi",
-      "last_name": "World",
-      "email": "helloWorld@abc.com",
-      "gender": "Female",
-      "status": "New"
-    },
-    {
       "id": 2,
       "first_name": "Jane",
       "last_name": "Doe",

@@ -6,7 +6,7 @@ import axios from 'axios';
 export const getEmployee = () => async dispatch => {
     
     try{
-        const response = await axios.get("http://localhost:3000/employees")
+        const response = await axios.get("http://localhost:3001/employees")
         // console.log("the response",response)
         dispatch( {
             type: GET_EMPLOYEES,
@@ -20,6 +20,7 @@ export const getEmployee = () => async dispatch => {
     )
    }
 }
+
 export const delEmployee = (id) => async dispatch => {
     
     try{
